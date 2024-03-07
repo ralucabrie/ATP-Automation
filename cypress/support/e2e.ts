@@ -3,7 +3,8 @@ import './commands'
 declare global {
       namespace Cypress {
         interface Chainable {
-          dataCy(value: string): Chainable;
+          acceptCookies(): Chainable;
+          selectValue(placeholder: string, value: string): Chainable;
         }
       }
     }
