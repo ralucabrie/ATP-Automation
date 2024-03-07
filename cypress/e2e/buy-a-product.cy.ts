@@ -1,5 +1,6 @@
 before(() => {
    cy.visit('https://www.atp-autoricambi.it/');
+   cy.acceptCookies();
 });
 
 describe('Buy a product', () => {
